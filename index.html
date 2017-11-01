@@ -63,7 +63,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Research (testing mode 8)</h2>
+                    <h2>Research (testing mode 9)</h2>
                 </div>
             </div>
             <div class="row">
@@ -162,30 +162,31 @@
         </script>
         <script type="text/javascript" src="domcollapse.js"></script>
         <script type="text/javascript">
-        function show_hide() {
-            var x = document.getElementById('show_hide_div');
-            if (x.style.display === 'none') {
-                x.style.display = 'block';
-                alert('showing');
-            } else {
-                x.style.display = 'none';
-                alert('hiding');
+            function show_hide() {
+                var x = document.getElementById('show_hide_div');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                    alert('showing');
+                } else {
+                    x.style.display = 'none';
+                    alert('hiding');
+                }
+                document.getElementById('explain_text').style.display = 'none';
+                document.getElementById('explain_text2').style.display = 'none';
             }
-            document.getElementById('explain_text').style.display = 'none';
-            document.getElementById('explain_text2').style.display = 'none';
-        }
-        function show_func() {
-            //alert('show_func');
-            //alert(document.getElementById('show_hide_a').outerHTML);
-            document.getElementById('show_hide_a').innerHTML = "Hide publications under review.";
-            //document.getElementById('show_hide_a').outerHTML = "<a id='show_hide_a' href='javascript:hide_func()'>Hide publications under review.</a>";
-            //show_hide();
-        }
-        function hide_func() {
-            //alert('hide_func');
-            //alert(document.getElementById('show_hide_a').outerHTML);
-            document.getElementById('show_hide_a').outerHTML = "<a id='show_hide_a' href='javascript:show_func()'>Show publications under review.</a>";
-            show_hide();
-        }
+            function show_func() {
+                //alert('show_func');
+                //alert(document.getElementById('show_hide_a').outerHTML);
+                document.getElementById('show_hide_a').innerHTML = "Hide publications under review.";
+                //document.getElementById('show_hide_a').outerHTML = "<a id='show_hide_a' href='javascript:hide_func()'>Hide publications under review.</a>";
+                //show_hide();
+            }
+            function hide_func() {
+                //alert('hide_func');
+                //alert(document.getElementById('show_hide_a').outerHTML);
+                document.getElementById('show_hide_a').outerHTML = "<a id='show_hide_a' href='javascript:show_func()'>Show publications under review.</a>";
+                show_hide();
+            }
+        </script>
     </body>
 </html>
