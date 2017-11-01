@@ -63,7 +63,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Research (testing mode 7)</h2>
+                    <h2>Research (testing mode 8)</h2>
                 </div>
             </div>
             <div class="row">
@@ -175,9 +175,9 @@
             document.getElementById('explain_text2').style.display = 'none';
         }
         function show_func() {
-            alert('show_func');
-            alert(document.getElementById('show_hide_a').outerHTML);
-            document.getElementById('show_hide_a').outerHTML = "<a id='show_hide_a'>Hide publications under review.</a>";
+            //alert('show_func');
+            //alert(document.getElementById('show_hide_a').outerHTML);
+            document.getElementById('show_hide_a').innerHTML = "Hide publications under review.";
             //document.getElementById('show_hide_a').outerHTML = "<a id='show_hide_a' href='javascript:hide_func()'>Hide publications under review.</a>";
             //show_hide();
         }
