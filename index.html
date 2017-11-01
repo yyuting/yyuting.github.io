@@ -68,12 +68,12 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p><span id="explain_text" style="display: none;">If you are not a reviewer for Eurographics 2018, feel free to </span></p>
+                    <p><span id="explain_text">If you are not a reviewer for Eurographics 2018, feel free to </span></p>
                     <p><a id="show_hide_a" href="javascript:show_func()">Show publication under review.</a></p>
-                    <p><span id="show_hide_div" style="display: none;">.</span></p>
+                    <p><span id="explain_text2">.</span></p>
                 </div>
             </div>
-            <div id="show_hide_div" style="display: block;" -->
+            <div id="show_hide_div" style="display: none" -->
                 <div class="row gray">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/vizgen.jpg">
@@ -160,5 +160,31 @@
                 ga('create', 'UA-90918037-2', 'auto');
                 ga('send', 'pageview');
         </script>
+        <script type="text/javascript" src="domcollapse.js"></script>
+        <script type="text/javascript">
+        function show_hide() {
+            var x = document.getElementById('show_hide_div');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+                //alert('showing');
+            } else {
+                x.style.display = 'none';
+                //alert('hiding');
+            }
+            document.getElementById('explain_text').style.display = 'none';
+            document.getElementById('explain_text2').style.display = 'none';
+        }
+        function show_func() {
+            //alert('show_func');
+            //alert(document.getElementById('show_hide_a').outerHTML);
+            document.getElementById('show_hide_a').outerHTML = "<a id='show_hide_a' href='javascript:hide_func()'>Hide publications under review.</a>";
+            show_hide();
+        }
+        function hide_func() {
+            //alert('hide_func');
+            //alert(document.getElementById('show_hide_a').outerHTML);
+            document.getElementById('show_hide_a').outerHTML = "<a id='show_hide_a' href='javascript:show_func()'>Show publications under review.</a>";
+            show_hide();
+        }
     </body>
 </html>
