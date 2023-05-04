@@ -1,0 +1,146 @@
+<html>
+  <head>
+	  <title>Learning from Shader Program Traces</title>
+  </head>
+
+  <body style="background-color: #e0e0e0;"> <!-- style = "padding-left: 80px">-->
+    <center>
+    <table width=50% border=0 style="background-color: #ffffff; outline: #000000 dotted 2px; padding-left: 20px; padding-right: 20px; box-shadow: 10px 10px 10px #ccc;">
+
+      <tr>
+        <td align="center">
+          <center><br>
+            <font size = +3>Learning from Shader Program Traces</font>
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td align = "center">
+          <br>
+          <a href = "http://www.cs.princeton.edu/~yutingy/">Yuting Yang</a> &nbsp; &nbsp; <a href = "http://connellybarnes.com">Connelly Barnes</a> &nbsp; &nbsp; <a href = "https://www.cs.princeton.edu/~af/">Adam Finkelstein</a>
+        </td>
+      </tr>
+
+      <tr>
+
+        <td> <br><center><b>Eurographics 2022</b> <em style="color:#a00">(Best Paper Award)</em></center> </td>
+
+      </tr>
+
+      <tr>
+        <td align="center">
+            <br>
+            <center>
+            <img width=100% src="EG_2022_teaser.png"><br><br>
+            
+             <font size=-1></font>
+            </center>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td align = "center">
+          <br>
+          <table>
+            <tr>
+              <td><center>
+                <div style = "width:100%; text-align:justify; vertical-align:top"><b>Abstract</b><br><br>
+Deep learning for image processing typically treats input imagery as pixels in some color space. This paper proposes instead to learn from program traces of procedural fragment shaders -- programs that generate images. At each pixel, we collect the intermediate values computed at program execution, and these data form the input to the learned model. We investigate this learning task for a variety of applications: our model can learn to predict a low-noise output image from shader programs that exhibit sampling noise; this model can also learn from a simplified shader program that approximates the reference solution with less computation, as well as learn the output of postprocessing filters like defocus blur and edge-aware sharpening. Finally we show that the idea of learning from program traces can even be applied to non-imagery simulations of flocks of boids. Our experiments on a variety of shaders show quantitatively and qualitatively that models learned from program traces outperform baseline models learned from RGB color augmented with hand-picked shader-specific features like normals, depth, and diffuse and specular color. We also conduct a series of analyses that show certain features are important  within the trace: these coincide with intuitively important aspects of the program. The important features can be helpful for selecting a good subset of trace features for learning, and even learning from a small subset of the trace already outperforms the baselines. We finally show that multiple shaders can be learned together with a shared denoising network and a lightweight shader-specific encoder.
+<br><br>
+          <b>Links</b>
+          <ul>
+          <li><a href = "EG_2022.pdf">Paper</a>
+<!--                        <tr><td height = 30>Slides (<a href = "camo-talk.pdf">pdf</a>, <a href = "camo-talk.key">key</a>)</td></tr> -->
+          <li><a href="https://vimeo.com/manage/videos/671765926">Video: Short (5 min)</a>
+	  <li><a href="https://www.youtube.com/watch?v=h56djcyD5Ik">Video: Long (20 min)</a>
+	  <li><a href="https://github.com/yyuting/learning_from_program_trace">Github</a>
+          </ul>
+	  <b>Citation</b>
+          <p>
+		Yuting Yang, Connelly Barnes and Adam Finkelstein.
+                <br>
+		"Learning from Shader Program Traces."
+		<br>
+		<i>Eurographics, April 2022</i>
+		, April, 2022. 
+		</p>
+	  <b>Bibtex</b>
+	  <p></p>
+	  <pre>@inproceedings{Yang:2022:LFS,
+   author = "Yuting Yang and Connelly Barnes and Adam Finkelstein",
+   title = "Learning from Shader Program Traces",
+   booktitle = "Eurographics",
+   year = "2022",
+   month = apr
+}<pre>
+		</div>
+                </center>
+              </td>
+            </tr>
+          </table>
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="left">
+        </td>
+      </tr>
+          <!--<tr>
+            <td>
+              <br>
+              <br>
+              <div style = "text-align:center">Try to find the hidden box in a <a id = "alink" href = "">camouflage game</a>! We'll use your input in our studies.</div>
+              <script>
+                var id = "C" + Math.floor(10000000*Math.random());
+                document.getElementById("alink").href = "http://camo-exp.appspot.com/game?assignmentId=" + id + "&workerId=" + id;
+              </script>
+            </td>
+          </tr>-->
+
+        <!--
+          <tr>
+            <td>
+              <center>
+              <iframe width="600" height="450" src="http://www.youtube.com/v/fjWfa7HLdjo&vq=hd720" frameborder="0" allowfullscreen></iframe>
+
+              </center>
+
+              <br>
+
+            </td>
+          </tr>
+          -->
+
+          <!--<tr><br>
+            <td>
+              <br><br>
+              <b>Press:</b>&nbsp;
+              <a href = "http://www.wired.com/2014/06/mit-develops-an-algorithm-that-camouflages-eyesores/">Wired</a>,&nbsp;
+              <a href = "http://www.bostonglobe.com/ideas/2014/06/28/the-future-camouflage/Xi0vwqSt9q71f7StltEmcI/story.html">Boston Globe</a>,&nbsp;
+              <a href = "http://www.fastcoexist.com/3030962/new-technology-lets-objects-camouflage-themselves-in-plain-sight">Fast Company Co.Exist</a>,&nbsp;
+              <a href = "http://www.citylab.com/cityfixer/2014/05/a-better-way-to-camouflage-eyesores/371644/">The Atlantic Citylab</a>,&nbsp;
+              <a href = "http://newsoffice.mit.edu/2014/algorithms-produce-patterns-that-could-hide-public-eyesores-0521">MIT News</a>.&nbsp;
+              <br><br>
+            </td>
+          </tr>-->
+
+<!--          <tr>
+            <td>
+
+              <br><b>Bibtex</b>
+              <font size = 3>
+<pre>
+@inproceedings{barnes2015,
+  title="PatchTable: Efficient Patch Queries for Large Datasets and Applications",
+  author="Connelly Barnes and Fang-Lue Zhang and Liming Lou and Xian Wu and Shi-Min Hu",
+  booktitle = "ACM Transactions on Graphics (Proc. SIGGRAPH)",
+  year = "2015",
+  month = aug
+}
+</pre>-->
+
+    </table>
+    </center>

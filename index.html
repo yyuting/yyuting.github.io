@@ -3,16 +3,16 @@
 <html lang="en">
     <head>
         <title>Yuting Yang</title>
-    
+
         <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+
     </head>
     <body>
         <div class="container">
@@ -27,18 +27,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 text-left">
+                <div class="col-md-3">
                     <img class="img-responsive" src="images/me.jpg">
+		    <!--<img src="images/me_debug.jpg" class="responsive">-->
                 </div>
-                <div class="col-md-4 text-left">
+                <div class="col-md-5 text-left">
                     <h4 class="header">Graduate Student</h4>
-                    <h4 class="header"><a href="http://www.cs.virginia.edu/">Computer Science Department</a></h4>
-                    <h4 class="header"><a href="http://www.virginia.edu/">University of Virginia</a></h4>
+                    <h4 class="header"><a href="https://pixl.cs.princeton.edu/" target="_blank">PIXL Group</a></h4>
+                    <h4 class="header"><a href="https://www.cs.princeton.edu/" target="_blank">Computer Science Department</a></h4>
+                    <h4 class="header"><a href="https://www.princeton.edu/" target="_blank">Princeton University</a></h4>
                 </div>
                 <div class="col-md-4 text-right">
-                    <h4 class="header">85 Engineer's Way, Box 400740</h4>
-					<h4 class="header">Charlottesville, VA 22904</h4>
-					<h4 class="header">yyuting@virginia.edu</h4>
+                    <h4 class="header">35 Olden Street</h4>
+					<h4 class="header">Princeton, NJ 08540-5233</h4>
+					<h4 class="header">yutingy@princeton.edu</h4>
 				</div>
             </div>
             <div class="row">
@@ -51,9 +53,9 @@
                     <h2>About me</h2>
                 </div>
                 <div class="col-md-12">
-                    <p>I am a second year Ph.D. candidate in the <a href="http://www.cs.virginia.edu/">Computer Science Department</a> at the <a href="http://www.virginia.edu/">University of Virginia</a>. My research is on the efficiency and optimization on computer graphics algorithms, including some compiler techniques.</p>
-                    <p>My advisor is <a href="http://www.connellybarnes.com/">Dr. Connelly Barnes</a>.</p>
-                    <p>Here is my <a href="docs/cv_Yuting_Yang.pdf">CV</a>.</p>
+                    <p>I am a Ph.D. student in the <a href="https://www.cs.princeton.edu/" target="_blank">Computer Science Department</a> at <a href="https://www.princeton.edu/" target="_blank">Princeton University</a> working with <a href="https://www.cs.princeton.edu/~af/" target="_blank">Prof. Adam Finkelstein</a>. My research interests are in the intersection of computer graphics, computer vision, machine learning and programming language. My research is focused on using compiler techniques to help easy manipulation and fast prototyping for general computer graphics and vision programs. My current and past research projects involve automatic differentiation to discontinuous programs, automatic convolution to programs, augmenting program trace to deep learning applications, and optimizing program performance by program translation and transformation. </p>
+                    <p>Before joining Princeton, I received 3 years of Ph.D. training at the <a href="http://www.virginia.edu/" target="_blank">University of Virginia</a>. My advisor at UVa is <a href="http://www.connellybarnes.com/" target="_blank">Dr. Connelly Barnes</a>.</p>
+		    <p>Please see my <a href="docs/resume.pdf">resume</a> or <a href="docs/research_statement.pdf">research statement</a> for more information.</p>
                 </div>
             </div>
             <div class="row">
@@ -63,28 +65,69 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Research</h2>
+                    <h2>Research Publications <a href="https://scholar.google.com/citations?user=pOCTtlkAAAAJ&hl=en" target="_blank">(Google Scholar)</a></h2>
+                    <h2></h2>
                 </div>
             </div>
+            <!--
             <div class="row">
                 <div class="col-md-12">
-                    <p><span id="explain_text">If you are not a reviewer for Eurographics 2018, feel free to </span></p>
-                    <p><a id="show_hide_a" onclick="show_func()">Show publication under review.</a></p>
-                    <p><span id="explain_text2">.</span></p>
+                    <p>
+                        <span id="explain_text">If you are not a reviewer of graphics papers, feel free to </span>
+                        <a id="show_hide_a" onclick="show_func()">Show publication under review</a>
+                        <span id="explain_text2">.</span>
+                    </p>
                 </div>
             </div>
+            -->
             <div id="show_hide_div" style="display: none" -->
-                <div class="row gray">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/test.png">
-                    </div>
-                    <div class="col-md-9">
-                        <h4><b>Approximate Program Smoothing Using Mean-Variance Statistics, with Application to Procedural Shader Bandlimiting</b></h4>
-                        <h4>Yuting Yang, Connelly Barnes</h4>
-                        <h4>arXiv preprint, 2017</h4>
-                        <p>This paper introduces a general method to approximate the convolution of an arbitrary program with a Gaussian kernel which facilitates smoothing out the program. We give several approximations including a novel adaptive Gaussian approximation that is accurate up to the second order in the standard deviation of the smoothing kernel. We construct a compiler framework that automatically chooses approximations for different parts of the program. We apply this framework to bandlimiting procedural shaders.</p>
-                        <h5>[ <a href="https://arxiv.org/pdf/1706.01208.pdf">paper</a> ]
-                    </div>
+            </div>
+	    <div class="row gray">
+                <div class="col-md-3">
+                    <img class="img-responsive" src="docs/siggraph22_representative.png">
+                </div>
+                <div class="col-md-9">
+                    <h4><b>Aδ: Autodiff for Discontinuous Programs - Applied to Shaders</b></h4>
+                    <h4>Yuting Yang, Connelly Barnes, Andrew Adams, Adam Finkelstein</h4>
+                    <h4>SIGGRAPH 2022</h4>
+<p>This paper describes a compiler-based framework that extends reverse mode automatic differentiation so as to provide accurate gradients for arbitrary programs, even at discontinuities. We demonstrate the effectiveness of this framework in the context of optimizing parameters of 2D/3D procedural shader programs so that they match target illustrations.</p>
+<h5>[ <a href="docs/siggraph_2022.html" target="_blank">project page</a> ] [ <a href="docs/siggraph_2022.pdf" target="_blank">paper</a> ] [ <a href="https://vimeo.com/703521232" target="_blank">video (short)</a> ] [ <a href="https://www.youtube.com/watch?v=lXXtKgkUN1o&feature=youtu.be&ab_channel=YutingYang" target="_blank">video (long)</a> ] [ <a href="https://www.youtube.com/watch?v=HvslNmNF4Ss&ab_channel=YutingYang" target="_blank">video (live demo)</a> ] [ <a href="https://github.com/yyuting/Adelta" target="_blank">Github</a> ]
+                </div>
+            </div>
+            <div class="row gray">
+                <div class="col-md-3">
+                    <img class="img-responsive" src="images/program_trace.jpg">
+                </div>
+                <div class="col-md-9">
+                    <h4><b>Learning from Shader Program Traces</b></h4>
+                    <h4>Yuting Yang, Connelly Barnes, Adam Finkelstein</h4>
+                    <h4>Eurographics 2022 <em style="color:#a00">(Best Paper Award)</em></h4>
+<p>This paper proposes to learn from program traces of procedural fragment shaders -- programs that generate images. At each pixel, we collect the intermediate values computed at program execution, and these data form the input to the learned model. We investigate this learning task for a variety of applications: denoising, learning from partial computation, learning postprocessing filters and learning non-imagery simulations. Our method outperforms baselines both qualitatively and quantitatively. We also conduct a series of analyses that show certain features are important within the trace: these coincide with intuitively important aspects of the program. The important features can be helpful for selecting a good subset of trace features for learning, and even learning from a small subset of the trace already outperforms the baselines.</p>    
+<h5>[ <a href="docs/eg_2022.html" target="_blank">project page</a> ] [ <a href="docs/EG_2022.pdf" target="_blank">paper</a> ] [ <a href="https://vimeo.com/manage/videos/671765926" target="_blank">video (short)</a> ] [ <a href="https://www.youtube.com/watch?v=h56djcyD5Ik&ab_channel=YutingYang" target="_blank">video (long)</a> ] [ <a href="https://github.com/yyuting/learning_from_program_trace" target="_blank">Github</a> ]
+                </div>
+            </div>
+            <div class="row gray">
+                <div class="col-md-3">
+                    <img class="img-responsive" src="images/hyperparameter.png">
+                </div>
+                <div class="col-md-9">
+                    <h4><b>Hyperparameter Optimization in Black-box Image Processing using Differentiable Proxies</b></h4>
+                    <h4>Ethan Tseng, Felix Yu, Yuting Yang, Fahim Mannan, Karl St. Arnaud, Derek Nowrouzezahrai, Jean-François Lalonde, Felix Heide</h4>
+                    <h4>SIGGRAPH 2019</h4>
+                    <p>We present a fully automatic system to optimize the parameters of black-box hardware and software image processing pipelines according to any arbitrary (i.e., application-specific) metric. We leverage a differentiable mapping between the configuration space and evaluation metrics, parameterized by a convolutional neural network that we train in an end-to-end fashion with imaging hardware in-the-loop. Unlike prior art, our differentiable proxies allow for high-dimension parameter search with stochastic first-order optimizers, without explicitly modeling any lower-level image processing transformations.</p>
+                    <h5>[ <a href="http://www.cs.princeton.edu/~fheide/proxyopt" target="_blank">project page</a> ] [ <a href="http://www.cs.princeton.edu/~fheide/ProxyOpt.pdf" target="_blank">paper</a> ]
+                </div>
+            </div>
+            <div class="row gray">
+                <div class="col-md-3">
+                    <img class="img-responsive" src="images/shader.png">
+                </div>
+                <div class="col-md-9">
+                    <h4><b>Approximate Program Smoothing Using Mean-Variance Statistics, with Application to Procedural Shader Bandlimiting</b></h4>
+                    <h4>Yuting Yang, Connelly Barnes</h4>
+                    <h4>Eurographics 2018</h4>
+                    <p>This paper introduces a general method to approximate the convolution of an arbitrary program with a Gaussian kernel which facilitates smoothing the program. We give several approximations including a novel adaptive Gaussian approximation that is accurate up to the second order in the standard deviation of the smoothing kernel. We construct a compiler framework that automatically chooses approximations for different parts of the program. We then apply this framework to bandlimit procedural shaders.</p>
+                    <h5>[ <a href="docs/eg_2018.html" target="_blank">project page</a> ] [ <a href="docs/EG_2018_final.pdf" target="_blank">paper</a> ] [ <a href="docs/EG_2018_final_supplemental.pdf" target="_blank">supplemental</a> ] [ <a href="https://vimeo.com/261015455" target="_blank">video (Vimeo)</a> ]
                 </div>
             </div>
             <div class="row gray">
@@ -94,9 +137,9 @@
                 <div class="col-md-9">
                     <h4><b>VizGen: Accelerating Visual Computing Prototypes in Dynamic Languages</b></h4>
                     <h4>Yuting Yang, Sam Prestwood, Connelly Barnes</h4>
-                    <h4>ACM SIGGRAPH Asia 2016</h4>
+                    <h4>SIGGRAPH Asia 2016</h4>
                     <p>This paper introduces a novel domain-specific compiler, which translates visual computing programs written in dynamic languages to highly efficient code. We define "dynamic" languages as those such as Python and MATLAB, which feature dynamic typing and can be useful for rapid prototyping, but introduces significant overheads in program execution time. We introduce a compiler framework for accelerating visual computing programs written in general-purpose dynamic languages. Our compiler allows frequently orders of magnitude performance gains over general compilers for dynamic languages by specializing the compiler for visual computation.</p>
-                    <h5>[ <a href="http://www.connellybarnes.com/work/project_pages/vizgen/">project page</a> ] [ <a href="http://www.connellybarnes.com/work/publications/2016_vizgen.pdf">paper</a> ]
+		    <h5>[ <a href="docs/sig_asia_2016.html" target="_blank">project page</a> ] [ <a href="docs/VizGen.pdf" target="_blank">paper</a> ] [ <a href="docs/VizGen_supplemental.pdf" target="_blank">supplemental</a> ]  [ <a href="docs/VizGen.pptx" target="_blank">slides (pptx)</a> ]
                 </div>
             </div>
             <div class="row gray">
@@ -108,7 +151,7 @@
                     <h4>Yuting Yang, Camillo Taylor, Daniel Lee</h4>
                     <h4>ITS International January February 2016</h4>
                     <p>Traffic information can be collected from existing inexpensive roadside cameras but extracting it often entails manual work or costly commercial software. We proposed a method that tracks and counts vehicles in the video and to use the tracking information to compute a 3D model for the vehicles and visualise the 2D road situation into 3D. The 3D model can provide feedback on the tracking and counting model for future research. </p>
-                    <h5>[ <a href="http://www.itsinternational.com/categories/detection-monitoring-machine-vision/features/intersection-monitoring-from-video-using-3d-reconstruction/">article</a> ]
+                    <h5>[ <a href="http://www.itsinternational.com/categories/detection-monitoring-machine-vision/features/intersection-monitoring-from-video-using-3d-reconstruction/" target="_blank">article</a> ]
                 </div>
             </div>
             <div class="row">
@@ -124,13 +167,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4><b>M.S., Electrical Engineering</b></h4>
-                    <p>I received my master degree at the <a href="http://www.upenn.edu">University of Pennsylvania</a> in May 2015. My thesis was "Road Intersecting Monitoring from Video with 3D Reconstruction", advised by <a href="http://www.seas.upenn.edu/~ddlee/">Dr. Daniel Lee</a> and <a href="https://www.cis.upenn.edu/~cjtaylor/home.html">Dr. Camillo Taylor</a>.
+                    <p>I received my master degree at the <a href="http://www.upenn.edu" target="_blank">University of Pennsylvania</a> in May 2015. My thesis was "Road Intersecting Monitoring from Video with 3D Reconstruction", advised by <a href="https://www.seas.upenn.edu/~ddlee/" target="_blank">Dr. Daniel Lee</a> and <a href="https://www.cis.upenn.edu/~cjtaylor/home.html" target="_blank">Dr. Camillo Taylor</a>.
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <h4><b>B.S., Electronics and Information Engineering</b></h4>
-                    <p>I received my bachelor degree at <a href="http://english.hust.edu.cn">Huazhong University of Science and Technology</a> in June 2013. My thesis was "Motion Detection from Video Surveillance", advised by Dr. Hao Wen.
+                    <p>I received my bachelor degree at <a href="http://english.hust.edu.cn" target="_blank">Huazhong University of Science and Technology</a> in June 2013. My thesis was "Motion Detection from Video Surveillance", advised by Dr. Hao Wen.
                 </div>
             </div>
             <div class="row">
@@ -141,25 +184,26 @@
             <div class="row">
                 <div class="col-md-12 text-right">
                     <font color="grey" size="-1">
-                        Theme uses <a href="http://getbootstrap.com/">Bootstrap</a>. Inspired by <a href="http://www.cs.virginia.edu/~ft3ex/">Fuwen Tan's homepage</a>.
+                        Theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. Inspired by <a href="http://www.cs.virginia.edu/~ft3ex/" target="_blank">Fuwen Tan's homepage</a>.
                     </font>
                 </div>
-            </div>    
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <hr>
                 </div>
-            </div>            
+            </div>
         </div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90918037-3"></script>
         <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-                ga('create', 'UA-90918037-2', 'auto');
-                ga('send', 'pageview');
+          gtag('config', 'UA-90918037-3');
         </script>
+
         <script type="text/javascript" src="domcollapse.js"></script>
         <script type="text/javascript">
             function show_hide() {

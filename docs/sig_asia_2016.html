@@ -1,0 +1,161 @@
+
+<!-- saved from url=(0014)about:internet -->
+<html><head>
+	  <title>VizGen: Accelerating Visual Computing Prototypes in Dynamic Languages</title>
+  </head>
+
+  <body style="background-color: #e0e0e0;"> <!-- style = "padding-left: 80px">-->
+    <center>
+    <table width="50%" border="0" style="background-color: #ffffff; outline: #000000 dotted 2px; padding-left: 20px; padding-right: 20px; box-shadow: 10px 10px 10px #ccc;">
+
+      <tbody><tr>
+        <td align="center">
+          <center><br>
+            <font size="+3">VizGen: Accelerating Visual Computing Prototypes in Dynamic Languages</font>
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">
+          <br>
+          <a href = "http://www.cs.princeton.edu/~yutingy/">Yuting Yang</a> &nbsp; &nbsp; Samantha Prestwood &nbsp; &nbsp; <a href="http://connellybarnes.com/">Connelly Barnes</a>
+        </td>
+      </tr>
+
+      <tr>
+
+        <td> <br><center><b>ACM Transactions on Graphics (presented at ACM SIGGRAPH Asia 2016)</b> </center> </td>
+
+      </tr>
+
+      <tr>
+        <td align="center">
+            <br>
+            <center>
+            <img width="80%" src="vizgen_header.jpg"><br><br>
+            Three applications that were compiled with our compiler, which is specialized for visual computing programs. Image compositing
+(a) gains a 1732X speedup over the equivalent code in the Python interpreter. Our result is shown in the diagonal upper-left corner, and the
+Python result is shown in the diagonal lower-right corner: notice there is no difference between the two images. A Harris corner detector (b)
+and a Mandelbrot fractal renderer (c) likewise gain significant speedups after being compiled with our compiler, relative to Python.
+             <font size="-1"></font>
+            </center>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td align="center">
+          <br>
+          <table>
+            <tbody><tr>
+              <td><center>
+                <div style="width:100%; text-align:justify; vertical-align:top"><b>Abstract</b><br><br>
+ This paper introduces a novel domain-specific compiler, which translates visual computing programs written in dynamic languages to highly efficient code. We define ``dynamic" languages as those such as Python and MATLAB, which feature dynamic typing and flexible array operations. Such language features can be useful for rapid prototyping, however, the dynamic computation model introduces significant overheads in program execution time. We introduce a compiler framework for accelerating visual computing programs, such as graphics and vision programs, written in general-purpose dynamic languages. Our compiler allows substantial performance gains (frequently orders of magnitude) over general compilers for dynamic languages by specializing the compiler for visual computation. Specifically, our compiler takes advantage of three key properties of visual computing programs, which permit optimizations: (1) many array data structures have small, constant, or bounded size, (2) many operations on visual data are supported in hardware or are embarrassingly parallel, and (3) humans are not sensitive to small numerical errors in visual outputs due to changing floating-point precisions. Our compiler integrates program transformations that have been described previously, and improves existing transformations to handle visual programs that perform complicated array computations. In particular, we show that dependent type analysis can be used to infer sizes and guide optimizations for many small-sized array operations that arise in visual programs. Programmers who are not experts on visual computation can use our compiler to produce more efficient Python programs than if they write manually parallelized C, with fewer lines of application logic.
+<br><br>
+          <b>Links</b>
+          <ul>
+          <li><a href="VizGen.pdf">Paper</a>
+          </li><li><a href="VizGen_supplemental.pdf">Supplemental PDF</a>
+<!--                        <tr><td height = 30>Slides (<a href = "camo-talk.pdf">pdf</a>, <a href = "camo-talk.key">key</a>)</td></tr> -->
+          </li><li><a href="https://github.com/uva-graphics/vizgen">Compiler source code</a>: GitHub project page
+          </li><li><a href="VizGen.pptx">Slides</a>
+          </li></ul>
+
+					<b>Citation</b>
+          <p>
+                Yuting Yang, Samantha Prestwood and Connelly Barnes.
+                <br>
+                "VizGen: Accelerating Visual Computing Prototypes in Dynamic Languages."
+                <br>
+                <i>SIGGRAPH Asia 2016</i>, December, 2016.
+          </p>
+
+					<b>Bibtex</b>
+          <p></p>
+          <pre> @article{yang2016,
+  author = "Yuting Yang and Sam Prestwood and Connelly Barnes",
+  title = "VizGen: Accelerating Visual Computing Prototypes in Dynamic Languages",
+  journal = "ACM Transactions on Graphics (Proc. SIGGRAPH ASIA)",
+  year = "2016",
+  month = dec,
+  volume = "35",
+  number = "6"
+} </pre>
+
+          <b>Photo credits</b><br><br>
+          The photos in the paper are licensed under Creative Commons or public domain licenses. Links to the original photographs on Flickr (which includes each full license text) are included as hyperlinks in the paper. The photos in the caption above are: (a) <a href="https://pixabay.com/en/dog-golden-retriever-golden-220428/">Karen Arnold</a> and <a href="http://skitterphoto.com/?portfolio=sunny-day">Skitterphoto</a>, (b) modified from original by <a href="https://www.flickr.com/photos/atoach/4983323227">Tim Green</a>.
+                </div>
+                </center>
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td align="left">
+        </td>
+      </tr>
+          <!--<tr>
+            <td>
+              <br>
+              <br>
+              <div style = "text-align:center">Try to find the hidden box in a <a id = "alink" href = "">camouflage game</a>! We'll use your input in our studies.</div>
+              <script>
+                var id = "C" + Math.floor(10000000*Math.random());
+                document.getElementById("alink").href = "http://camo-exp.appspot.com/game?assignmentId=" + id + "&workerId=" + id;
+              </script>
+            </td>
+          </tr>-->
+
+        <!--
+          <tr>
+            <td>
+              <center>
+              <iframe width="600" height="450" src="http://www.youtube.com/v/fjWfa7HLdjo&vq=hd720" frameborder="0" allowfullscreen></iframe>
+
+              </center>
+
+              <br>
+
+            </td>
+          </tr>
+          -->
+
+          <!--<tr><br>
+            <td>
+              <br><br>
+              <b>Press:</b>&nbsp;
+              <a href = "http://www.wired.com/2014/06/mit-develops-an-algorithm-that-camouflages-eyesores/">Wired</a>,&nbsp;
+              <a href = "http://www.bostonglobe.com/ideas/2014/06/28/the-future-camouflage/Xi0vwqSt9q71f7StltEmcI/story.html">Boston Globe</a>,&nbsp;
+              <a href = "http://www.fastcoexist.com/3030962/new-technology-lets-objects-camouflage-themselves-in-plain-sight">Fast Company Co.Exist</a>,&nbsp;
+              <a href = "http://www.citylab.com/cityfixer/2014/05/a-better-way-to-camouflage-eyesores/371644/">The Atlantic Citylab</a>,&nbsp;
+              <a href = "http://newsoffice.mit.edu/2014/algorithms-produce-patterns-that-could-hide-public-eyesores-0521">MIT News</a>.&nbsp;
+              <br><br>
+            </td>
+          </tr>-->
+
+<!--          <tr>
+            <td>
+
+              <br><b>Bibtex</b>
+              <font size = 3>
+<pre>
+@inproceedings{barnes2015,
+  title="PatchTable: Efficient Patch Queries for Large Datasets and Applications",
+  author="Connelly Barnes and Fang-Lue Zhang and Liming Lou and Xian Wu and Shi-Min Hu",
+  booktitle = "ACM Transactions on Graphics (Proc. SIGGRAPH)",
+  year = "2015",
+  month = aug
+}
+</pre>-->
+
+    </tbody></table>
+    </center>
+
+
+
+
+</body></html>
